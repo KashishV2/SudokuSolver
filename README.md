@@ -1,83 +1,92 @@
-Sudoku Solver Project
+# Sudoku Solver
 
-Overview
+INTRODUCTION-
 
-This project is a Sudoku solver developed in Eclipse, implementing an efficient algorithm to solve Sudoku puzzles.
+The Sudoku Solver Project is designed to develop a program that solves Sudoku puzzles automatically. Sudoku is a popular puzzle game where players fill a 9x9 grid with numbers from 1 to 9, following specific rules.
 
-Features
+    
+
+
+
+## LOGIC OF THE PROBLEM
+
+Step 1: Understand the Problem
+
+- Sudoku is a 9x9 grid divided into 9 3x3 sub-grids (regions)
+- Each region, row, and column must contain numbers 1-9 without repetition
+- The program should take an incomplete Sudoku grid as input and fill it correctly
+
+Step 2: Represent the Grid
+
+- Use a 2D array (9x9) to represent the Sudoku grid
+- Initialize the grid with given values (0 for empty cells)
+Step 3: Solve the Sudoku
+
+- Find Empty Cells: Iterate through the grid to find empty cells (0)
+- Check Valid Numbers: For each empty cell, check which numbers (1-9) are valid
+ Check row, column, and region constraints
+
+- Recursion: If a valid number is found, recursively call the solve function
+   Backtracking: If no valid number is found, backtrack to previous cell
+
+ Step 4:Implement the Algorithm
+ -Create a function solveSudoku(grid) to solve the Sudoku 
+ -Use recursion and backtracking to fill the grid 
+ -Implement row, column, and region checks
+
+
+## Features
 
 - Solves Sudoku puzzles
 - Developed in Eclipse
 - Written in Java
 
-Usage
 
-1. Clone the repository.
-2. Import into Eclipse.
-3. Run the project.
+## Usage
 
-Requirements
+- Clone the repository.
+- Import into Eclipse.
+- Run the project.
+
+
+## Requirements
 
 - Eclipse IDE
 - Java 8 or higher
 
-License
+## Screenshots
 
-This project is licensed under the MIT License.
+![SudokuBoard](https://github.com/user-attachments/assets/d63fc430-b62f-43f9-ab56-03f9db5d9577))
 
-Contributors
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Contributing
 
 - Kashish Varshney (varshneykashish76@gmail.com)
-Some Sample Sudoku Puzzles
 
 
-1 2 . 4 . . 3 . .
-3 . . . 1 . . 5 .
-. . 6 . . . 1 . .
-7 . . . 9 . . . .
-. 4 . 6 . 3 . . .
-. . 3 . . 2 . . .
-5 . . . 8 . 7 . .
-. . 7 . . . . . 5
-. . . . . . . 9 8
+## Badges
 
-1 2 . 3 . . . . .
-3 4 . . . . 1 . .
-. . 5 . . . . . .
-6 . 2 4 . . 5 . .
-. . . . 6 . . 7 .
-. . . . . 8 . . 6
-. . 4 2 . . 3 . .
-. . . . 7 . . . 9
-. . . . . 9 . 8 .
+ [shields.io](https://shields.io/)
 
-. . . . . . . 1 2
-. . . . . . . . 3
-. . 2 3 . . 4 . .
-. . 1 8 . . . . 5
-. 6 . . 7 . 8 . .
-. . . . . 9 . . .
-. . 8 5 . . . . .
-9 . . . 4 . 5 . .
-4 7 . . . 6 . . .
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
-. 2 . . 5 . 7 . .
-4 . . 1 . . . . 6
-8 . . . . 3 . . .
-2 . . . . 8 . . 3
-. 4 . . 2 . 5 . .
-. . . 6 . . . 1 .
-. . 2 . 9 . . . .
-. 9 . . . . . . 5
-7 . 4 . . . 9 . .
 
-. . . . . . . . 3
-. . 1 . . 5 6 . .
-. 9 . . 4 . . 7 .
-. . . . . 9 . 5 .
-7 . . . . . . . 8
-. 5 . 4 . 2 . . .
-. 8 . . 2 . . 9 .
-. . 3 5 . . 1 . .
-6 . . . . . . . .
+
+
+
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](http://www.linkedin.com/in/kashish-varshney-166333273)
+[![Github](https://img.shields.io/badge/Github-1DA1F2?style=for-the-badge&logo=GITHUB&logoColor=white)](https://github.com/KashishV2)
+
+
+
+
+
 
